@@ -1,13 +1,13 @@
 # Data repository for 'Thermodynamic Scaling in Molecular Liquids: Coarse-Graining in Space and Time'
-Zenodo link: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11624467.svg)](https://doi.org/10.5281/zenodo.11624467)
+**Zenodo link**: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11624467.svg)](https://doi.org/10.5281/zenodo.11624467)
 
-Authors:
+**Authors**:
 * Jaehyeok Jin (jj3296@columbia.edu)
 * David R. Reichman (drr2103@columbia.edu)
 * Jeppe C. Dyre (dyre@ruc.dk)
 * Ulf R. Pedersen (urp@ruc.dk)
 
-Preprint: [arXiv:2402.08675](https://arxiv.org/abs/2402.08675)
+**Preprint**: [arXiv:2402.08675](https://arxiv.org/abs/2402.08675)
 
 ## Folders
 
