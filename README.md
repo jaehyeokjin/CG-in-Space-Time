@@ -7,7 +7,7 @@
 * Jeppe C. Dyre (dyre@ruc.dk)
 * Ulf R. Pedersen (urp@ruc.dk)
 
-**Preprint**: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11624467.svg)]([https://doi.org/10.5281/zenodo.11624467](https://arxiv.org/abs/2402.08675)) 
+**Preprint**: **Preprint**: [arXiv:2402.08675](https://arxiv.org/abs/2402.08675) 
 
 ## Folders
 
