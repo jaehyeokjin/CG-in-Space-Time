@@ -1,0 +1,26 @@
+For simplicity, the output file names in the RDF and interaction folders follow the labeling below:
+
+Label Box length	Temperature
+1  35.944	380
+2  35.5	400
+3  36.3	420
+4  35.5	440
+5  35.5	450
+6  36.655	460
+7  35.5	480
+8  36.833	480
+9  35.5	500
+10  37.01	500
+11  35.5	540
+12  37.2	540
+13  37.366	540
+14  35	600
+15  35.5	600
+16  36	600
+17  36.4	600
+18  36.8	600
+19  37	600
+20  37.2	600
+21  37.6	600
+22  37.899	600
+23  35.5	700

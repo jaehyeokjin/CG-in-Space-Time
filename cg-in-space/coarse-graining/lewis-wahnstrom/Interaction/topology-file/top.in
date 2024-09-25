@@ -1,0 +1,17 @@
+cgsites 375
+cgtypes 2
+A
+B
+moltypes 1
+mol 3 -1
+sitetypes 
+1
+2
+1
+bonds 2
+1 2 
+2 3
+angles 0 0
+dihedrals 0 0
+system 1
+1 125
