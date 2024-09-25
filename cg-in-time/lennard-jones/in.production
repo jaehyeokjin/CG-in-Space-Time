@@ -1,0 +1,28 @@
+units       lj
+dimension   3
+boundary    p p p
+atom_style  atomic
+
+pair_style  lj/cut 2.5
+read_data   data.equbriliated
+pair_coeff  1 1 1.0 1.0
+pair_modify shift yes
+
+neighbor    1.0 bin
+neigh_modify every 1 delay 1 check yes
+
+timestep    0.005
+variable T index 0.66716
+fix langevin all langevin $T $T 1.0 2024 gjf vfull
+fix integrator all nve
+fix no_cm_drift all momentum 100 linear 1 1 1
+
+compute virial all pressure NULL virial
+
+thermo 1
+thermo_style custom step temp press pe ke c_virial
+dump dumpXYZ all xyz 20000 traj.xyz
+
+run         1000000
+
+write_data data.final

@@ -1,0 +1,13 @@
+steps_per_nanosecond = 12500
+trajectory_nano_seconds = 200.0
+temperature = 380.0
+box_length = 35.944
+density = 1.029393519125942
+tau_min = 1
+tau_max = 5
+R = 0.8669989896761723
+gamma = 6.830380905012417
+A = "156.4512126088421"
+beta = "0.690079288170696"
+t_alpha = "0.5256766893435546"
+wall_clock_time_for_post_production = 12.785454393999999

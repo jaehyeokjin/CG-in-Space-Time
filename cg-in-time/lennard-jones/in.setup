@@ -1,0 +1,45 @@
+units       lj
+dimension   3
+boundary    p p p
+atom_style  atomic
+
+pair_style lj/cut 2.5
+pair_modify shift yes
+
+# Lattice and region setup
+lattice      fcc 0.8442 orient x 1 0 0 orient y 0 1 0 orient z 0 0 1
+region       box block 0 10 0 10 0 10
+create_box   1 box
+create_atoms 1 box
+mass         1 1.0
+
+# Interaction setup
+pair_coeff   1 1 1.0 1.0
+
+# Initialize velocities
+velocity    all create 1.5 2024 rot yes dist gaussian
+
+## integrater
+timestep    0.005
+variable T index 0.66716
+fix langevin all langevin 1.5 $T 1.0 2024 gjf vfull
+fix integrator all nve
+fix no_cm_drift all momentum 100 linear 1 1 1
+neigh_modify every 1 delay 1 check yes 
+fix 1 all momentum 100 linear 1 1 1
+
+# Compute virial
+compute virial all pressure NULL virial
+
+## Output
+thermo_style custom step temp press pe ke c_virial
+thermo 2000
+dump dumpXYZ all xyz 10000 traj.xyz
+# dump dumpATOM all atom 1000 traj.atom
+# dump_modify dumpATOM image yes
+# restart 1000 crash.1.restart crash.2.restart
+
+## Run
+run 100000
+write_data data.lennard_jones
+

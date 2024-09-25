@@ -1,0 +1,5 @@
+df.Temp.mean() = 551.2023341096592
+df.Density.mean() = 0.9437711500023016
+df.Press.mean() = 559.6489182634015
+df.PotEng.mean() = 7936.728270233789
+

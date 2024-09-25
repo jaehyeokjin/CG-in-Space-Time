@@ -1,0 +1,47 @@
+# Create initial configuration
+
+units real
+atom_style full
+boundary p p p
+
+# Potential
+pair_style lj/cut/coul/long 9.0 9.0
+pair_modify mix geometric
+bond_style      harmonic
+angle_style     harmonic
+dihedral_style  opls
+improper_style  cvff
+special_bonds lj/coul 0.0 0.0 0.5
+pair_modify tail yes
+kspace_style pppm 1.0e-4
+
+# Setup initial structure
+read_data data.initial
+variable L index 35.2
+change_box all x final 0 $L y final 0 $L z final 0 $L boundary p p p remap units box
+
+# Integrator
+timestep 2.0
+variable T index 380
+fix npt all npt temp $T $T 100.0 iso 1.0 1.0 1000.0
+fix no_cm_drift all momentum 100 linear 1 1 1
+neigh_modify every 1 check yes 
+
+# Compute virial
+compute virial all pressure NULL virial
+
+# Output
+thermo_style custom step temp press pe ke evdwl ecoul emol vol density c_virial
+thermo 16
+dump dumpATOM all atom 1048576 dump.constant_volume
+dump_modify dumpATOM image yes
+#dump XYZ all xyz 50000 constant_volume.xyz
+restart 1048576 crash.1.restart crash.2.restart
+
+# Run simulation
+variable run index 134217728
+run ${run}
+
+# Write equbriliated structure
+write_data data.final
+
