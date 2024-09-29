@@ -1,5 +1,5 @@
 # Data repository for 'Thermodynamic Scaling in Molecular Liquids: Coarse-Graining in Space and Time'
-**Zenodo link**: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11624467.svg)](https://doi.org/10.5281/zenodo.11624467)
+**Zenodo link containing trajectory files**: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11624467.svg)](https://doi.org/10.5281/zenodo.11624467)
 
 **Authors**:
 * Jaehyeok Jin (jj3296@columbia.edu)
