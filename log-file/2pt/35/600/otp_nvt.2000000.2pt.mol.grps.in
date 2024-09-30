@@ -1,0 +1,15 @@
+IN_LMPDATA                    /project2/gavoth/jhjin/meoh-neopentane/press/roskilde/ulf/excess-entropy-scan/35/600/aa-2pt/water.data
+IN_LMPTRJ                     ../otp_nvt.2000000.2pt
+ANALYSIS_FRAME_INITIAL        1
+ANALYSIS_FRAME_FINAL          0
+ANALYSIS_FRAME_STEP           1
+ANALYSIS_VAC_CORLENGTH        0.5
+ANALYSIS_VAC_MEMORYMB         10500
+ANALYSIS_VAC_2PT              3
+ANALYSIS_OUT                  otp_nvt.2000000.2pt.mol.grps
+ANALYSIS_LMP_TSTEP            0.001
+ANALYSIS_VAC_LINEAR_MOL	      0
+ANALYSIS_VAC_ROTN_SYMMETRY    g
+ANALYSIS_VAC_FIXED_DF         g
+IN_GROUPFILE                  /project2/gavoth/jhjin/meoh-neopentane/press/roskilde/ulf/excess-entropy-scan/35/600/aa-2pt/water.grps
+

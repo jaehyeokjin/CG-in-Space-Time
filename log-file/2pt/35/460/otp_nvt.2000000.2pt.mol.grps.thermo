@@ -1,0 +1,35 @@
+**********************************************************************************
+*                     Two-Phase Thermodynamics (2PT) Program                     *
+*                          Shiang-Tai Lin (stlin@ntw.edu.tw)                     *
+* Department of Chemical Engineering, National Tiawan University, Taipei, Taiwan *
+*                   Prabal K Maiti (maiti@physics.iisc.ernet.in)                 *
+*   Department of Physics, Indian Institute of Science, Bangalore, India 560012  *
+*                          Tod A Pascal (tpascal@wag.caltech.edu)                *
+*                                     and                                        *
+*                        William A Goddard III (wag@wag.caltech.edu)             *
+*         Materials and Process Simulation Center, Caltech, Pasadena, CA USA     *
+*                                Copyright (c) 2010                              *
+*                                All rights Reserved                             *
+*                             *************************                          *
+*                                      Cite:                                     *
+* S.T. Lin, M. Blanco and W.A. Goddard, J. Chem. Phys., 2003, 119, 11792-11805   *
+* S.T. Lin, P.K. Maiti and W.A. Goddard, J. Phys. Chem. B., 2010, 114, 8191-8198 *
+* T.A. Pascal, S.T. Lin and W.A. Goddard, PCCP, 2011, 13 (1), 169 - 181          *
+**********************************************************************************
+
+ Calculation of Thermodynamic Properties
+             property Trns[G001]  Rot[G001] Ivib[G001]  Tot[G001] Trns[G002]  Rot[G002] Ivib[G002]  Tot[G002]
+           nmolecules        125        125        125        125        125        125        125        125
+                natom       4000       4000       4000       4000       4000       4000       4000       4000
+                  dof     374.91     374.91   11247.19   11997.00     374.91     374.91   11247.19   11997.00
+  temperature_____(K)     466.64     462.56     459.48     459.80     466.64     462.56     459.48     459.80
+  pressure______(GPa)       0.42       0.42       0.42       0.42       0.42       0.42       0.42       0.42
+  ZPE_(kJ/mol/SimBox)     123.80     155.59   85962.79   86242.18     123.80     155.59   85962.79   86242.18
+  Emd_(kJ/mol/SimBox)    1478.20    1478.20   44345.94   47302.33    1478.20    1478.20   44345.94   47302.33
+  Eq__(kJ/mol/SimBox)    1483.92    1486.92   96226.65   99197.48    1483.92    1486.92   96226.65   99197.48
+  Sq_(J/mol_K/SimBox)    9360.25    8804.68   34264.07   52429.01    9360.25    8804.68   34264.07   52429.01
+  Aq__(kJ/mol/SimBox)   -2883.96   -2585.78   80483.03   75013.29   -2883.96   -2585.78   80483.03   75013.29
+  Cvq(J/mol_K/SimBox)    3051.22    3050.00   41597.76   47698.98    3051.22    3050.00   41597.76   47698.98
+  S(0)(cm/mol/SimBox)       0.16       0.13       0.04       0.33       0.16       0.13       0.04       0.33
+  Diffus(cm2/s_,_1/s) 5.9717e-07 4.9100e-07 1.5280e-07 1.2294e-06 5.9717e-07 4.9100e-07 1.5280e-07 1.2294e-06
+  fluidicity_________ 0.03547198 0.03181518 0.00000000 0.00000000 0.03547198 0.03181518 0.00000000 0.00000000
